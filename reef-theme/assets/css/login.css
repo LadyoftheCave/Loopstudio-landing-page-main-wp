@@ -1,0 +1,46 @@
+@font-face{
+    font-family: 'YuGothicUI-Light';
+    font-stretch: normal;
+    font-display: swap;
+    src: url('../fonts/subset-YuGothicUI-Light.woff2') format('woff2');
+  }
+  
+  @font-face{
+    font-family: 'YuGothicUI-Semibold';
+    font-stretch: normal;
+    font-display: swap;
+    src: url('../fonts/subset-YuGothicUI-Semibold.woff2') format('woff2');
+  }
+
+:root{
+    --primaryColor:#f26c45;
+    --primaryVariationColor:#e26641;
+    --secondaryColor:#9fa099;
+    --secondaryVariationColor:#c1ceb0;
+    --blackCustomColor:#000000;
+    --whiteCustomColor:#ffffff;
+    --greyCustomColor:#d5d2cd85;
+
+    --primaryFont:'YuGothicUI-Light', sans-serif;
+    --secondaryFont:'YuGothicUI-Semibold', sans-serif;
+}
+
+body.login {	background-color:var(--secondaryColor);	background-repeat: no-repeat;	background-size: cover;	background-position: center;	display: flex;}
+body.login div#login {	background-color: white;	padding: 20px;	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);	border-radius: 7px;}
+.login .button-primary {	background-color: transparent;	border: 2px solid var(--primaryColor);	color: #3c434a;}
+.login .button-primary:hover {	background-color: transparent;	border: 2px solid var(--primaryVariationColor);	color: #3c434a;}
+.login .button-primary,
+.login .button-primary:hover,
+.login #login_error,
+.login .message,
+.login .success,
+.login #backtoblog a,
+.login #nav a,
+.login label,
+.login form .input,
+.login input[type=text] {font-family: var(--primaryFont);}
+body.login form {	border: none;	box-shadow: none;}
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus { border-color: var(--primaryColor); box-shadow: 0 0 0 1px var(--primaryColor);}
+.login form input:focus {	border-color: var(--primaryColor);	box-shadow: 0 0 0 1px var(--primaryColor);}
+.login input[type=text], .login input[type=password]{border: 1px solid var(--primaryColor)}
+input[type=checkbox]:checked::before {content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E")}

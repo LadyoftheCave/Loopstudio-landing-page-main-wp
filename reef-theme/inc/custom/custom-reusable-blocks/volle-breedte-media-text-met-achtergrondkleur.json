@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "Volle Breedte Media/Text met achtergrondkleur",
+  "content": "<!-- wp:group {\"align\":\"full\",\"backgroundColor\":\"grey-custom\"} -->\n<div class=\"wp-block-group alignfull has-grey-custom-background-color has-background\"><!-- wp:media-text {\"verticalAlignment\":\"top\"} -->\n<div class=\"wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top\"><figure class=\"wp-block-media-text__media\"></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading -->\n<h2></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button /-->\n\n<!-- wp:button /--></div>\n<!-- /wp:buttons --></div></div>\n<!-- /wp:media-text --></div>\n<!-- /wp:group -->"
+}

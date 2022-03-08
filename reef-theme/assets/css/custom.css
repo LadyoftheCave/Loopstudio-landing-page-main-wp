@@ -1,0 +1,44 @@
+/* 
+  ----------
+  Variabelen
+  ----------
+*/
+:root{
+  /* Kleuren */
+  --primaryColor:blue;
+  --primaryVariationColor:#5c911b;
+  --secondaryColor:#0073aa;
+  --secondaryVariationColor:#0d3452;
+  --blackCustomColor:#000000;
+  --whiteCustomColor:#ffffff;
+  --greyCustomColor:#d5d2cd;
+
+  /* Fonts */
+  --primaryFont:'Roboto', sans-serif;
+  --secondaryFont:var(--primaryFont);
+
+  /* Site opties */
+  --siteWidth: 1200px;
+  --defaultGap: 30px;
+  --flex3basis: calc((100% - 2 * var(--defaultGap)) / 3);
+  --defaultBorderRadius: 5px;
+  --menuWidthOnScroll: 215px;
+
+  /* wp styles */
+  --wp--preset--font-size--small: 0.8rem;
+	--wp--preset--font-size--normal: 1rem;
+	--wp--preset--font-size--medium: 1rem;
+	--wp--preset--font-size--large: 1.2rem;
+	--wp--preset--font-size--x-large: 1.5rem;
+  --wp--preset--font-size--huge: 2rem;
+}
+
+@media ( min-width:768px ) {
+  :root body {
+    /* Kleuren */
+    --defaultGap: 50px;
+    --wp--preset--font-size--large: 1.3rem;
+    --wp--preset--font-size--x-large: 2rem;
+    --wp--preset--font-size--huge: 3rem;
+  }
+}

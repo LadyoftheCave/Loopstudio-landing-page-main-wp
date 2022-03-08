@@ -1,0 +1,111 @@
+/* !! - Denk eraan dat de kleuren in de editor options en de css hetzelfde moeten zijn. - !!*/
+/* Variabelen*/
+:root{ /* Kleuren */
+  --primaryColor:#ffffff;--primaryVariationColor:#81bb25;--secondaryColor:#edf2f6;--secondaryVariationColor:#565656;--blackCustomColor:#000000;--whiteCustomColor:#ffffff;--greyCustomColor:#d5d2cd;/* Fonts */
+  --primaryFont:'Josefin Sans', sans-serif;--secondaryFont:'Alata', sans-serif;--headingText:3rem;--photoText:2.2rem;/* Site opties */
+  --siteWidth:1200px;--defaultGap:30px;--flex3basis:calc((100% - 2 * var(--defaultGap)) / 3);--defaultBorderRadius:0px;--menuWidthOnScroll:215px;--menuMarginLeft:80px;/* wp styles */
+  --wp--preset--font-size--small:0.8rem;--wp--preset--font-size--normal:1rem;--wp--preset--font-size--medium:1rem;--wp--preset--font-size--large:1.2rem;--wp--preset--font-size--x-large:1.5rem;--wp--preset--font-size--huge:2rem;}
+ @media ( min-width:769px ){ :root body{ --menuMarginLeft:100px;--defaultGap:50px;--wp--preset--font-size--large:1.3rem;--wp--preset--font-size--x-large:2rem;--wp--preset--font-size--huge:3rem;}
+ }
+ header.site-header{ min-height:65vh;background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-hero.jpg);background-size:cover;}
+ header .wrap{ display:flex;align-items:flex-start;}
+ header .nav-menu .nav-primary, .nav-menu .nav-secondary{ margin-top:3rem;}
+ header .nav-menu.active .nav-primary{ color:black;}
+ header .nav-menu.active .menu > .menu-item > a{ color:black;}
+ header .nav-menu .nav-primary a:hover::after{ content:'';position:absolute;border-top:3px solid white;left:50%;bottom:0;margin-left:-15px;width:30px;height:0px;}
+  header .icon.icon-logo{ margin-top:3rem;margin-left:-9px;}
+ header #header_text{ color:#fff;text-transform:uppercase;font-size:4rem;line-height:4.2rem;}
+ header .margin_box{ max-width:var(--siteWidth);margin:0 auto;padding-left:16px;padding-right:16px;}
+ header .header_text_wrapper{ width:38rem;border:2px solid white;padding:2rem 5rem 0 2rem;}
+ main .has-black-custom-color{ color:var(--blackCustomColor);font-family:var(--primaryFont);text-transform:uppercase;}
+ .site-container .site-main .wp-block-columns .wp-block-column{ flex-basis:80%;flex-grow:1;position:relative;}
+ .site-container .site-main .wp-block-columns .wp-block-column.leader_text_blok{ margin-left:var(--wp--style--block-gap,2em);position:absolute;background:white;width:37rem;padding:6rem 6rem 0 6rem;margin-top:16.7rem;margin-left:42rem;}
+ .site-container .site-main p{ font-size:0.9rem;font-family:var(--secondaryFont);line-height:1.6rem;color:#7a7876}
+ .site-container .site-main h2{ font-size:var(--photoText);font-family:var(--primaryFont);text-transform:uppercase;}
+ .site-container .wp-block-group{ padding:var(--defaultGap) 0px;}
+ .site-container .wp-block-group.grid_group{ padding:0px 0px;}
+ .site-container .wp-block-group.grid_group{ margin-bottom:var(--defaultGap);}
+ .site-container .wp-block-group .wp-block-group__inner-container{ padding:0 0px;}
+ .site-container .wp-block-column .wp-block-cover{ align-items:flex-end;}
+ .site-container .wp-block-column .wp-block-cover .wp-block-cover__inner-container{ width:90%;margin-left:1rem;}
+ .site-container .wp-block-columns{ margin-top:var(--defaultGap);}
+ .site-container .wp-block-column .p_container_direct{ width:10rem;border:1px solid var(--blackCustomColor);padding-top:0.3rem;padding-bottom:0.3rem;text-transform:uppercase;letter-spacing:0.2rem;text-align:center;cursor:pointer;}
+ .site-container .wp-block-column .p_container_direct:hover{ background-color:black;color:white;}
+ .site-container .wp-block-column.p_container{ display:flex;justify-content:flex-end;}
+ #leader_text_blok{ margin-left:var(--wp--style--block-gap,2em);position:absolute;background:white;width:37rem;padding:6rem 6rem 0 6rem;margin-top:16.7rem;margin-left:42rem;}
+ #leader_image_blok{ flex-basis:80%;flex-grow:1;position:relative;}
+ .banner::after{ background:none;}
+ .banner{ height:0vw;}
+ footer.site-footer .logo_shortcode_container .icon.icon-logo{ margin-bottom:-7.5rem;}
+ footer.site-footer .menu-footermenu-container ul#menu-footermenu{ color:var(--whiteCustomColor);display:flex;}
+ footer.site-footer .footer-menu ul li, .site-footer .sub-footer-menu ul li{ margin-right:2.5rem;}
+ footer.site-footer{ background-color:var(--blackCustomColor);}
+ footer.site-footer .madebywa{ color:var(--whiteCustomColor);}
+ footer.site-footer .logo_shortcode_containerTwo .wp-block-group__inner-container{ display:flex;}
+ footer.site-footer .footer-menu{ grid-template-columns:1fr;grid-template-rows:1fr;}
+ footer.site-footer .logo_shortcode_containerTwo .wp-block-group__inner-container{ display:flex;}
+ footer.site-footer .wrap{ display:flex;}
+ footer.site-footer .madebywa{ text-align:right;font-family:var(--primaryFont);margin-top:-13.5rem;color:#9e9d9d}
+ footer.site-footer #block-12 .wp-block-group__inner-container p{ margin-left:15px;}
+ footer.site-footer #block-12 .wp-block-group__inner-container{ width:10rem;justify-self:flex-end;}
+ footer.site-footer .footer_links{ display:flex;color:white;font-weight:bold;cursor:pointer;}
+ footer.site-footer .footer_links a:hover::after{ content:'';height:2px;background:white;display:block;margin-top:2px;margin-left:25%;width:30px;}
+.site-header .wrap .menu-toggle{ margin-top:3rem;fill:white;}
+.site-header .wrap .search-toggle{ right:0;margin-top:3rem;fill:white;}
+.site-header.active .menu-toggle{ fill:black;margin-top:0rem}
+.site-header.active .wrap .search-toggle{ fill:black;margin-top:0rem}
+.site-header.active .wrap .nav-menu.active a{ color:black;}
+.site-container .site-main .wp-block-cover__inner-container h2{ color:white;}
+#photo_text.photo_text_total{ max-width:var(--siteWidth);}
+ .Photo_blok_01.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-deep-earth-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .Photo_blok_02.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-night-arcade-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .Photo_blok_03.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-soccer-team-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .Photo_blok_04.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-grid-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .photo_blok_05.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-from-above-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .photo_blok_06.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-pocket-borealis-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .photo_blok_07.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-curiosity-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ .photo_blok_08.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-fisheye-4.jpg);background-size:cover;height:25rem;padding-top:17rem;}
+ h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background{ padding:1em 1em;}
+  .wp-container-6225fc550abc5.wp-block-group{ padding:0;}
+  .site-container .wp-block-group__inner-container .wp-block-columns{ margin-top:unset;}
+  .wp-block-group.mobiel_button{ display:none;}
+ .p_container_direct_mobiel{ width:10rem;border:1px solid var(--blackCustomColor);padding-top:0.3rem;padding-bottom:0.3rem;text-transform:uppercase;letter-spacing:0.2rem;text-align:center;cursor:pointer;}
+  .p_container_direct_mobiel:hover{ background-color:black;color:white;}
+  .mobiel_button .wp-block-group__inner-container{ display:grid;place-items:center;}
+
+  @media (max-width:1210px){ #leader_text_blok{ margin-left:0;position:unset;background:white;padding:unset;margin-top:0;margin-left:0;width:20vw;padding-right:4rem;padding-left:2rem;}
+ }
+ @media (max-width:768px){ header .icon.icon-logo{ margin-left:6px;}
+  footer.site-footer .madebywa{ margin-top:-11rem;height:10rem;}
+  @media (max-width:599px){ #leader_text_blok{ padding-left:2rem;padding-right:2rem;}
+  header #header_text{ font-size:3rem;line-height:3.2rem;}
+  header .header_text_wrapper{ width:29rem;}
+  .wp-block-columns.photo_text_total{ flex-wrap:wrap;}
+  .site-container .site-main #creations_button_blok.wp-block-columns .wp-block-column{ flex-basis:unset;}
+  #creations_button_blok{ flex-wrap:nowrap;}
+  .our_creations.has-black-custom-color.has-text-color{ width:70vw;}
+  footer.site-footer .wrap{ grid-template-columns:unset;grid-template-rows:unset;display:flex;flex-direction:column;}
+  footer.site-footer .footer_links{ flex-direction:column;}
+  footer .footer-menu .wp-block-group__inner-container{ text-align:center;}
+  footer.site-footer .footer-menu ul li{ margin-right:0rem;line-height:3rem;}
+  footer.site-footer .footer_links a:hover::after{ content:'';height:2px;background:white;display:block;text-align:center;width:30px;margin-left:47%;}
+  footer.site-footer .madebywa{ text-align:center;margin-top:-11.5rem;color:#9e9d9d}
+  footer.site-footer .logo_shortcode_container .icon.icon-logo{ margin-bottom:-7.5rem;text-align:center;margin-left:16%;}
+  .Photo_blok_01.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-deep-earth-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .Photo_blok_02.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-night-arcade-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .Photo_blok_03.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-soccer-team-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .Photo_blok_04.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-grid-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .photo_blok_05.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-from-above-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .photo_blok_06.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-pocket-borealis-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .photo_blok_07.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-curiosity-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  .photo_blok_08.has-black-custom-background-color.has-background{ background-image:url(http://localhost/reef-theme/wp-content/uploads/2022/02/image-fisheye-5.jpg);background-size:cover;height:12rem;padding-top:8rem;}
+  header.site-header{ background-position-x:-10rem;}
+  .site-container .site-main p.main_tekst_kop{ font-size:1.2rem;line-height:1.9rem;padding-right:3rem;padding-left:3rem;}
+  #leader_text_blok{ text-align:center;}
+  #leader_text_blok{ margin-top:1.5rem;}
+  .site-container .wp-block-column.p_container{ display:flex;justify-content:flex-end;display:none;}
+  .our_creations.has-black-custom-color.has-text-color{ width:unset;text-align:center;}
+  .wp-block-group.mobiel_button{ display:block;}
+  }
+  }
+ 
